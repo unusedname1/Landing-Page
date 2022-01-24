@@ -1,28 +1,30 @@
 body {
     font-family: sans-serif;
-
     display: flex;
     flex-direction: column;
-
     margin: 0;
 }
 
-.header,
-.main,
-.footer {
+.header {
     background-color: #3f2f4e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 128px;
 }
 
-.info,
-.reminder {
+.main {
+    background-color: #3f2f4e;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 64px 128px;
+}
+
+.info {
     background-color: rgb(29, 29, 29);
-}
-
-.info-title,
-.quote-text,
-.quote-name,
-.item div {
-    color: rgb(192, 192, 192);
+    text-align: center;
+    padding-bottom: 128px;
 }
 
 .quote {
@@ -30,32 +32,18 @@ body {
     padding: 64px 128px;
 }
 
-.main-image,
-.item-img,
-.reminder-box {
-    border-radius: 16px;
+.reminder {
+    background-color: rgb(29, 29, 29);
+    padding: 64px;
 }
 
-.signup-btn,
-.reminder-btn {
+.footer {
     color: #F9FAF8;
-    background-color: #e08b29;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    border: 0;
-    padding: 8px 28px;
-}
-
-.reminder-btn {
-    border: 2px solid #F9FAF8;
-}
-
-.header {
+    background-color: #3f2f4e;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 16px 128px;
+    padding: 32px 0;
 }
 
 .logo {
@@ -72,13 +60,6 @@ body {
 .menu-item {
     color: #F9FAF8;
     text-decoration: none;
-}
-
-.main {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    padding: 64px 128px;
 }
 
 .main-content {
@@ -99,13 +80,9 @@ body {
 }
 
 .main-image {
+    border-radius: 16px;
     height: 225px;
     width: auto;
-}
-
-.info {
-    text-align: center;
-    padding-bottom: 128px;
 }
 
 .info-title,
@@ -114,6 +91,7 @@ body {
 }
 
 .info-title {
+    color: rgb(192, 192, 192);
     font-weight: 1000;
     padding: 32px;
 }
@@ -125,6 +103,7 @@ body {
 }
 
 .item-img {
+    border-radius: 16px;
     border: 3px solid #e08b29;
     margin-bottom: 4px;
     width: 160px;
@@ -137,18 +116,16 @@ body {
 }
 
 .quote-text {
+    color: rgb(192, 192, 192);
     font-size: 32px;
     font-style: italic;
 }
 
 .quote-name {
+    color: rgb(192, 192, 192);
     font-size: 18px;
     font-weight: bold;
     text-align: end;
-}
-
-.reminder {
-    padding: 64px;
 }
 
 .reminder-text {
@@ -156,6 +133,7 @@ body {
 }
 
 .reminder-box {
+    border-radius: 16px;
     width: 700px;
     background-color: #e08b29;
     display: flex;
@@ -170,10 +148,17 @@ body {
     font-size: 24px;
 }
 
-.footer {
+.signup-btn,
+.reminder-btn {
     color: #F9FAF8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 0;
+    background-color: #e08b29;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    padding: 8px 28px;
+}
+
+.reminder-btn {
+    border: 2px solid #F9FAF8;
 }
