@@ -110,6 +110,10 @@ body {
     height: 160px;
 }
 
+.item div {
+    color: #F9FAF8;
+}
+
 .quote-container {
     width: 800px;
     margin: 0 auto;
